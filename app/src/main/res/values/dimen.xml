@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop">25sp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="textSizeHead">40sp</dimen>
+    <dimen name="padding">12dp</dimen>
+    <dimen name="matginLeft">12dp</dimen>
+    <dimen name="center_text">50dp</dimen>
+    <dimen name="marginBtm">8dp</dimen>
+    <dimen name="marginRight">12dp</dimen>
+    <dimen name="margonLeftHead">20dp</dimen>
+    <dimen name="marginTopHead">40dp</dimen>
+    <dimen name="marginBtmm">80dp</dimen>
+    <dimen name="paddingcontentBox">20dp</dimen>
+    <dimen name="texthowto">22sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="marginRightHeader">50dp</dimen>
+    <dimen name="fontsizeHeader">22sp</dimen>
+    <dimen name="marginTopHeader">12dp</dimen>
+    <dimen name="marginLeftname">24dp</dimen>
+    <dimen name="marginLeftList">60dp</dimen>
+    <dimen name="marginLeftListt">70dp</dimen>
+    <dimen name="paddinglist">6dp</dimen>
+    <dimen name="marginDialog">24dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+</resources>

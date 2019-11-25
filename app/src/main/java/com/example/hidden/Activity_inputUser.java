@@ -33,13 +33,13 @@ public class Activity_inputUser extends AppCompatActivity {
         btnGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Activity_inputUser.this, UserListShow.class);
+                Intent intent = new Intent(Activity_inputUser.this, GameActivity.class);
                 if (name.getText().length() != 0) {
-                    user = new User(new Date().getTime(), name.getText().toString(), 0);
-                    database.createUser(user);
-                    user = database.getUserById(getIntent().getLongExtra("id", 0));
+                    user = new User(0, name.getText().toString(), 0);
+                    long id  = database.createUser(user);
+                    intent.putExtra("id", id);
+                    startActivity(intent);
                 }
-                startActivity(intent);
             }
         });
 

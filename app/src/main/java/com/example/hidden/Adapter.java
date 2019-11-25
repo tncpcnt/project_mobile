@@ -60,7 +60,7 @@ public class Adapter extends BaseAdapter {
         userLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, UserListShow.class);
+                Intent intent = new Intent(mContext, GameActivity.class);
                 intent.putExtra("id", userArrayList.get(position).getId());
                 mContext.startActivity(intent);
             }

@@ -26,7 +26,7 @@ public class UserListShow extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
 
-        userArrayList = new Database(this).getAllUser();
+        userArrayList = new Database(this).getAllUserOrderScore();
         listView = findViewById(R.id.user_list);
 
         userAdapter = new Adapter(UserListShow.this, userArrayList);

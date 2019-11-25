@@ -9,5 +9,6 @@
     <string name="score_play"> Score </string>
     <string name="go"> Go!!! </string>
     <string name="btnBack"> Back </string>
-
+    <string name="level">Level: </string>
+    <string name="time">Time:</string>
 </resources>
