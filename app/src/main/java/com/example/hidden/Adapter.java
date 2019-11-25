@@ -49,19 +49,12 @@ public class Adapter extends BaseAdapter {
         if (view == null)
             view = mInflater.inflate(R.layout.user_list, parent, false);
 
-        TextView name = (TextView) view.findViewById(R.id.namePlay);
-        TextView score = (TextView) view.findViewById(R.id.scorePlay);
+        TextView name = (TextView) view.findViewById(R.id.name);
+        TextView score = (TextView) view.findViewById(R.id.score);
 
 
         name.setText(userArrayList.get(position).getName());
-        score.setText(userArrayList.get(position).getScore());
-
-//        User user = userArrayList.get(position);
-//        TextView edt1 = (TextView) view.findViewById(R.id.namePlay);
-//        edt1.setText(String.valueOf(user.getName()));
-//
-//        TextView edt2 = (TextView) view.findViewById(R.id.scorePlay);
-//        edt2.setText(String.valueOf(user.getScore()));
+        score.setText(String.valueOf(userArrayList.get(position).getScore()));
 
         LinearLayout userLinearLayout = view.findViewById(R.id.user);
         userLinearLayout.setOnClickListener(new View.OnClickListener() {

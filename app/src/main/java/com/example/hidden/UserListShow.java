@@ -32,6 +32,12 @@ public class UserListShow extends Activity {
         userAdapter = new Adapter(UserListShow.this, userArrayList);
         listView.setAdapter(userAdapter);
 
+        findViewById(R.id.imageView2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 }

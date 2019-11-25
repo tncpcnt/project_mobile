@@ -1,26 +1,26 @@
 package com.example.hidden;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-//import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView btnStart ;
-    ImageView btnScore ;
+    ImageView btnStart;
+    ImageView btnScore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        btnStart = (ImageView)findViewById(R.id.start);
-        btnScore = (ImageView)findViewById(R.id.score);
+        Objects.requireNonNull(getSupportActionBar()).hide();
+        btnStart = (ImageView) findViewById(R.id.start);
+        btnScore = (ImageView) findViewById(R.id.score);
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,11 +31,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnScore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, UserListShow.class);
+                startActivity(intent);
+            }
+        });
 
     }
-
-//    @Override
-//    protected void attachBaseContext(Context newBase) {
-//        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-//    }
 }

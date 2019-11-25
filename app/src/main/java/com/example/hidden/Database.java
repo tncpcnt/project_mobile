@@ -38,7 +38,7 @@ public  class Database extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public long createUser(User user, Context context, int in) {
+    public long createUser(User user) {
         sqLiteDatabase = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(NAME, user.getName());

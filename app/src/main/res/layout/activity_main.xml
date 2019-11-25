@@ -21,7 +21,6 @@
 
         <ImageView
             android:id="@+id/start"
-            android:layout_marginTop="150dp"
             android:layout_width="435dp"
             android:layout_height="180dp"
             app:srcCompat="@drawable/start" />
