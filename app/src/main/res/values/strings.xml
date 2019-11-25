@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hidden</string>
+    <string name="start"> Start Game</string>
+    <string name="score"> Score </string>
+    <string name="yourName"> Enter Your Name </string>
+    <string name="input"> Please Input Your Name </string>
+    <string name="all_score"> All Score </string>
+    <string name="name_play"> Names </string>
+    <string name="score_play"> Score </string>
+    <string name="go"> Go!!! </string>
+    <string name="btnBack"> Back </string>
+
+</resources>
